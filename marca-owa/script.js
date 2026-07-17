@@ -102,13 +102,13 @@ const PERFIS = [
     img: CDN + "166770/Cantoneira%20Preta.jpg",
     cat: "Montagem",
   },
-  {
-    t: "Perfil Canaleta F530 3m p/ forro",
-    now: 15.42,
-    parc: "1x",
-    img: CDN + "163756/134.jpg",
-    cat: "Montagem",
-  },
+  //  {
+  //    t: "Perfil Canaleta F530 3m p/ forro",
+  //    now: 15.42,
+  //    parc: "1x",
+  //    img: CDN + "163756/134.jpg",
+  //    cat: "Montagem",
+  //  },
 ];
 
 const PROD = [...FORROS, ...PERFIS];

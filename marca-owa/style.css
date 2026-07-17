@@ -176,7 +176,7 @@
 }
 .bs-content .pion {
   display: inline-block;
-  background: var(--laranja);
+  background: var(--brand);
   color: #fff;
   font-family: "Archivo";
   font-weight: 800;
@@ -219,7 +219,7 @@
   font-weight: 900;
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: var(--laranja-2);
+  color: var(--brand);
   width: 130px;
   flex-shrink: 0;
 }
@@ -238,7 +238,7 @@
 }
 .brand-story .cta {
   display: inline-block;
-  background: var(--laranja);
+  background: var(--brand);
   color: #fff;
   font-family: "Archivo";
   font-weight: 800;

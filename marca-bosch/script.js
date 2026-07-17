@@ -34,13 +34,13 @@ const PROD = [
     img: CDN + "166132/06013980D0-000_02.jpg",
     cat: "Elétricas",
   },
-  {
-    t: "Esmerilhadeira Bosch GWS 770 M14 110V",
-    now: 405.13,
-    parc: "12x R$ 37,55",
-    img: CDN + "166120/06013980D0-000_02.jpg",
-    cat: "Elétricas",
-  },
+  //  {
+  //    t: "Esmerilhadeira Bosch GWS 770 M14 110V",
+  //    now: 405.13,
+  //    parc: "12x R$ 37,55",
+  //    img: CDN + "166120/06013980D0-000_02.jpg",
+  //    cat: "Elétricas",
+  //  },
   {
     t: "Martelete Rompedor Bosch GBH 2-24D 820W maleta 110V",
     now: 973.7,
@@ -50,13 +50,13 @@ const PROD = [
     img: CDN + "166902/06112A02D0-000_01.jpg",
     cat: "Elétricas",
   },
-  {
-    t: "Martelete Rompedor Bosch GBH 2-24D 820W maleta 220V",
-    now: 973.7,
-    parc: "12x R$ 90,26",
-    img: CDN + "166773/06112A02D0-000_01.jpg",
-    cat: "Elétricas",
-  },
+  //  {
+  //    t: "Martelete Rompedor Bosch GBH 2-24D 820W maleta 220V",
+  //    now: 973.7,
+  //    parc: "12x R$ 90,26",
+  //    img: CDN + "166773/06112A02D0-000_01.jpg",
+  //    cat: "Elétricas",
+  //  },
   {
     t: "Disco de Serra Circular Bosch PRO Wood Cordless",
     now: 289.73,
