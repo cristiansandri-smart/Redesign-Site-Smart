@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check script.js)",
+      "Bash(python -m http.server 8777 --bind 127.0.0.1)",
+      "WebFetch(domain:www.espacosmart.com.br)",
+      "Bash(node --check marca-bosch/script.js)",
+      "Bash(node --check marca-owa/script.js)"
+    ]
+  }
+}

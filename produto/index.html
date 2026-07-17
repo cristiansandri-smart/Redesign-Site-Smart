@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Smart — Página de Produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Página de produto (modelo) — Piso Vinílico Elegance · dados reais -->
+    <div class="badge">Protótipo navegável · <b>Página de Produto</b></div>
+
+    <div class="topbar">
+      COMPRE E PAGUE EM ATÉ 12X · FRETE PARA TODO O BRASIL · RETIRE GRÁTIS NA LOJA
+    </div>
+
+    <!-- HEADER reaproveitado -->
+    <header>
+      <div class="hd">
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.webp" alt="Espaço Smart" />
+        </a>
+        <div class="search">🔍 O que está buscando...</div>
+        <div class="live">📡 LOJA AO VIVO</div>
+        <a class="casas-lnk" href="../index.html#casas">🏠 LOJA DE CASAS</a>
+        <div class="hicons">
+          <span>📰</span><span>👤</span><span>📍</span><span>🛒</span>
+        </div>
+      </div>
+      <nav class="main">
+        <a href="../index.html#casas">LOJA DE CASAS</a>
+        <a href="../index.html">STEEL FRAMING</a>
+        <a href="../hub-shingle/index.html">TELHADO SHINGLE</a>
+        <a href="../index.html">DRYWALL</a>
+        <a href="../index.html">FORRO MODULAR</a>
+        <a href="../index.html">PISO VINÍLICO</a>
+        <a href="../index.html">REVESTIMENTOS</a>
+        <a href="../index.html">ESQUADRIAS DE PVC</a>
+      </nav>
+    </header>
+
+    <div class="wrap">
+      <!-- breadcrumb -->
+      <div class="crumb" id="crumb"></div>
+
+      <!-- ===================== BOX DO PRODUTO ===================== -->
+      <div class="product-box">
+        <!-- galeria -->
+        <div class="gallery">
+          <div class="thumbs" id="thumbs"></div>
+          <div class="stage" id="stage">
+            <img id="stageImg" alt="Produto" />
+          </div>
+        </div>
+
+        <!-- dados do produto -->
+        <div class="pinfo">
+          <div class="brand-row"><span id="pBrand"></span></div>
+          <h1 id="pName"></h1>
+          <div class="rating" id="rating"></div>
+
+          <div class="price-block">
+            <div class="p-old" id="pOld"></div>
+            <div class="p-now" id="pNow"></div>
+            <div class="p-parc" id="pParc"></div>
+            <div class="p-m2" id="pM2"></div>
+          </div>
+
+          <div class="specs-mini" id="specsMini"></div>
+        </div>
+
+        <!-- controles / ações -->
+        <div class="pactions">
+          <div class="promo-tag" id="promoTag">🔥 Promoção de Julho</div>
+
+          <div class="ship">
+            <div class="ship-line">
+              <span class="ship-ico">🚚</span>
+              <div><b id="shipFree">Frete grátis</b><span> acima de R$ 299 para sua região</span></div>
+            </div>
+            <div class="ship-line">
+              <span class="ship-ico">🏬</span>
+              <div><b>Retire grátis</b><span> em uma loja em até 4 horas</span></div>
+            </div>
+            <button class="btn-outline sm" type="button" id="btnLojas">📍 Buscar lojas próximas</button>
+          </div>
+
+          <div class="calc">
+            <div class="calc-cta">
+              <span>Calcule a quantidade necessária para sua obra</span>
+              <button class="btn-outline sm" type="button" id="btnCalcAvancada">Calcular</button>
+            </div>
+            <label class="calc-field">
+              <span>Metragem da sua obra (m²)</span>
+              <input type="number" id="m2Input" min="1" step="0.5" value="20" />
+            </label>
+            <label class="check">
+              <input type="checkbox" id="margem" />
+              <span>Adicionar 10% de margem de segurança</span>
+            </label>
+            <div class="calc-out" id="calcOut"></div>
+          </div>
+
+          <button class="btn-buy" type="button">COMPRAR AGORA</button>
+
+          <div class="frete">
+            <span>Calcular frete e prazo</span>
+            <div class="frete-in">
+              <input type="text" id="cep" placeholder="Digite seu CEP" />
+              <button class="btn-outline sm" type="button" id="btnCep">OK</button>
+            </div>
+            <div class="frete-hint">Ex.: 84010-000 · (cálculo ilustrativo)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== DETALHE (abaixo do box) ===================== -->
+      <div class="pdetail">
+        <!-- coluna principal: descrição + ficha técnica -->
+        <div class="pmain">
+          <section class="pad">
+            <div class="eye">Sobre o produto</div>
+            <h2 class="blk">Descrição técnica</h2>
+            <div class="desc" id="desc"></div>
+          </section>
+
+          <section class="pad">
+            <div class="eye">Especificações</div>
+            <h2 class="blk">Ficha técnica</h2>
+            <table class="ficha" id="ficha"></table>
+          </section>
+        </div>
+
+        <!-- coluna lateral interativa -->
+        <aside class="pside">
+          <div class="side-card">
+            <h4>Por que a Smart trabalha com este produto</h4>
+            <p class="side-sub">Pilares do Smart Think atendidos:</p>
+            <div class="pp-selos" id="ppSelos"></div>
+          </div>
+
+          <div class="side-card warranty">
+            <div class="w-ico">🛡️</div>
+            <div>
+              <h4 id="warrantyTitle">Garantia de 15 anos</h4>
+              <p>Certificado de garantia de fábrica contra defeitos de fabricação.</p>
+              <a class="side-link" id="dlWarranty">Baixar certificado (PDF)</a>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h4>Catálogos e manuais</h4>
+            <ul class="dl-list" id="dlList"></ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- ===================== COMPRE JUNTO (upsell) ===================== -->
+      <section class="pad">
+        <div class="eye">Combina com</div>
+        <h2 class="blk">Compre junto</h2>
+        <div class="row4" id="upsell"></div>
+      </section>
+
+      <!-- ===================== AVALIAÇÕES ===================== -->
+      <section class="pad">
+        <div class="reviews-head">
+          <div>
+            <div class="eye">O que dizem os clientes</div>
+            <h2 class="blk">Avaliações</h2>
+          </div>
+          <div class="ra-seal">
+            <div class="ra-star">✓</div>
+            <div>
+              <b>Empresa Indicada</b>
+              <span>Prêmio Reclame Aqui 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews" id="reviews"></div>
+      </section>
+    </div>
+
+    <!-- FOOTER reaproveitado -->
+    <footer>
+      <div class="wrap">
+        <div class="ftg">
+          <div>
+            <h5>Newsletter</h5>
+            <p style="color: #9aa2ab">Novidades e promoções em primeira mão.</p>
+            <div class="np">
+              <input placeholder="Insira seu e-mail" /><button>ENVIAR</button>
+            </div>
+          </div>
+          <div>
+            <h5>Institucional</h5>
+            <ul>
+              <li><a href="../index.html">Quem somos</a></li>
+              <li><a href="../index.html#casas">Loja de Casas</a></li>
+              <li>Sustentabilidade</li>
+              <li>Nossas Lojas</li>
+              <li>Seja Smart</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dúvidas</h5>
+            <ul>
+              <li>Blog</li>
+              <li>Condição CNPJ</li>
+              <li>Trocas e devoluções</li>
+              <li>Prazos e entregas</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Atendimento</h5>
+            <ul>
+              <li>WhatsApp</li>
+              <li>Loja ao Vivo</li>
+              <li>SAC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftbar">
+          Espaço Smart · Ponta Grossa - PR · Protótipo de estudo — não é o site
+          em produção · FastStore / VTEX
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

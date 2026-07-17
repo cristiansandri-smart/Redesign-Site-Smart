@@ -1,0 +1,300 @@
+/* =====================================================================
+   HUB TELHADO SHINGLE — estilos específicos
+   (o design system base vem de ../style.css: cores, fontes, header,
+    .pcard, .wrap, .pad, .inst, .casas, footer etc.)
+   ===================================================================== */
+
+/* ---------- HERO do hub ---------- */
+.hub-hero {
+  background: linear-gradient(120deg, #33445f, #1f2c46);
+  color: #fff;
+  overflow: hidden;
+}
+.hh-in {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 46px 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hh-txt {
+  flex: 1;
+  max-width: 560px;
+}
+.hh-txt h1 {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.02;
+  margin: 8px 0 12px;
+}
+.hh-txt p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin: 0 0 22px;
+}
+.hh-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hub-hero .cta {
+  display: inline-block;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 15px;
+  padding: 13px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.hub-hero .cta:hover {
+  background: var(--laranja-esc);
+}
+.hub-hero .cta.ghost {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+.hub-hero .cta.ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.hh-pic {
+  width: 40%;
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+.hh-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Ver mais (catálogo) ---------- */
+.allGrid-more {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.3s ease;
+}
+.allGrid-more.open {
+  max-height: 2000px;
+  opacity: 1;
+}
+.vermais-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.vermais {
+  border: 1.5px solid var(--laranja);
+  color: var(--laranja-esc);
+  background: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.vermais:hover {
+  background: var(--laranja);
+  color: #fff;
+}
+
+/* ---------- Comparativo Shingle vs convencional ---------- */
+.vs {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+.vs > div {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+}
+.vs .vs-h {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.vs .vs-h.win {
+  color: var(--laranja-2);
+  background: rgba(240, 122, 31, 0.14);
+}
+.vs .vs-crit {
+  color: #cfcbc3;
+  font-weight: 600;
+}
+.vs .vs-good {
+  color: #8fd6a8;
+  font-weight: 700;
+}
+.vs .vs-bad {
+  color: #d98a8a;
+}
+.vs > div:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+/* ---------- COMPOSIÇÃO DO TELHADO (interativo) ---------- */
+.comp-sub {
+  color: #9aa2ab;
+  font-size: 13.5px;
+  margin: 2px 0 22px;
+}
+.roof {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* pilha de camadas — slabs inclinados que reagem ao hover */
+.roof-stack {
+  position: relative;
+  height: 420px;
+  perspective: 1000px;
+}
+.roof-layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 74px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: rotateX(52deg) rotateZ(-38deg);
+  transform-style: preserve-3d;
+  transition: 0.35s cubic-bezier(0.25, 0.8, 0.3, 1);
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.roof-layer .rl-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.roof-layer .rl-cap {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 12.5px;
+  color: #fff;
+  margin-left: 12px;
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: 0.3s;
+}
+/* destaque no hover / ativo: puxa a camada pra fora da pilha */
+.roof-layer.active {
+  transform: rotateX(52deg) rotateZ(-38deg) translate3d(38px, -38px, 60px);
+  border-color: var(--laranja);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+.roof-layer.active .rl-cap {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* painel de detalhe */
+.roof-info {
+  background: #20272e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px;
+  min-height: 260px;
+}
+.roof-info .ri-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roof-info h3 {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 22px;
+  color: #fff;
+  margin: 14px 0 8px;
+}
+.roof-info p {
+  color: #c7ccd2;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+.roof-info .ri-spec {
+  display: inline-block;
+  background: rgba(240, 122, 31, 0.15);
+  border: 1px solid rgba(240, 122, 31, 0.4);
+  color: var(--laranja-2);
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 12.5px;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+/* ---------- responsivo ---------- */
+@media (max-width: 960px) {
+  .hh-in {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hh-txt h1 {
+    font-size: 30px;
+  }
+  .hh-cta {
+    justify-content: center;
+  }
+  .hh-pic {
+    width: 100%;
+  }
+  .allGrid-more {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vs {
+    font-size: 12px;
+  }
+  .roof {
+    grid-template-columns: 1fr;
+  }
+  .roof-stack {
+    height: 360px;
+  }
+}

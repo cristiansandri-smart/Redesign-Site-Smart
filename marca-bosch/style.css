@@ -1,0 +1,358 @@
+/* =====================================================================
+   HUB DE MARCA — estilos específicos (base vem de ../style.css)
+   Cor de destaque da marca via --brand (definida por classe no body).
+   ===================================================================== */
+.brand-bosch {
+  --brand: #0a53c0;
+}
+.brand-owa {
+  --brand: #ff0000;
+}
+
+/* ---------- BRAND HERO ---------- */
+.brand-hero {
+  position: relative;
+  background: linear-gradient(120deg, #2b2f36, #14171c);
+  color: #fff;
+  overflow: hidden;
+}
+.brand-strip {
+  height: 5px;
+  background: var(--brand);
+}
+.bh-in {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 44px 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.bh-txt {
+  flex: 1;
+  max-width: 580px;
+}
+.bh-logo {
+  width: 120px;
+  max-width: 150px;
+  margin-bottom: 12px;
+}
+.bh-origin {
+  display: inline-block;
+  margin: 10px 0 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.bh-txt h1 {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 1.03;
+  margin: 8px 0 12px;
+}
+.bh-txt p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin: 0 0 22px;
+}
+.bh-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.brand-hero .cta {
+  display: inline-block;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  padding: 13px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.brand-hero .cta:hover {
+  background: var(--laranja-esc);
+}
+.brand-hero .cta.ghost {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+}
+.brand-hero .cta.ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.bh-pic {
+  width: 38%;
+  height: 290px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+.bh-pic img {
+  object-fit: cover;
+  width: 100%;
+  transform: translateY(0px);
+}
+
+/* ---------- cards de produto: imagens de catálogo (fundo branco) ---------- */
+.brand-bosch .pcard .thumb,
+.brand-owa .pcard .thumb {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand-bosch .pcard .thumb img,
+.brand-owa .pcard .thumb img {
+  object-fit: contain;
+  padding: 12px;
+}
+
+/* ---------- ver todos ---------- */
+.vermais-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.vermais {
+  border: 1.5px solid var(--laranja);
+  color: var(--laranja-esc);
+  background: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.vermais:hover {
+  background: var(--laranja);
+  color: #fff;
+}
+
+/* =====================================================================
+   BLOCO INSTITUCIONAL — história da marca
+   Layout próprio (diferente da home): conteúdo em linhas na parte
+   inferior à esquerda; à direita uma ARTE que transborda pelo topo.
+   ===================================================================== */
+.brand-story {
+  position: relative;
+  background-image: url("../img/Bosh_back.png");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 24px;
+  border-radius: 0px 20px 20px 0px;
+  padding: 40px 45px 30px 0px;
+  margin-top: 96px; /* espaço para a arte que sai por cima */
+  overflow: visible; /* deixa a arte transbordar o container */
+}
+/* faixa fina na cor da marca à esquerda */
+.brand-story::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  bottom: 0px;
+  width: 5px;
+  border-radius: 0px;
+  background: var(--brand);
+}
+.bs-content {
+  align-self: end;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 30px 30px 30px;
+  margin-left: 0px;
+  border-radius: 0 20px 20px 0;
+}
+.bs-content .pion {
+  display: inline-block;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+.bs-content h2 {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.05;
+  color: #fff;
+  margin: 14px 0 10px;
+}
+.bs-content .lead {
+  font-size: 14.5px;
+  color: #c7ccd2;
+  margin: 0 0 20px;
+  max-width: 95%;
+}
+/* linhas de informação (não colunas) */
+.bs-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.bs-row {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bs-row .bs-k {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--laranja-2);
+  width: 130px;
+  flex-shrink: 0;
+}
+.bs-row h5 {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  margin: 0 0 2px;
+}
+.bs-row p {
+  margin: 0;
+  font-size: 12.5px;
+  color: #9aa2ab;
+  line-height: 1.4;
+}
+.brand-story .cta {
+  display: inline-block;
+  background: var(--laranja);
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.brand-story .cta:hover {
+  background: var(--laranja-esc);
+}
+/* área da arte (lado direito) — reserva o espaço da coluna direita.
+   NÃO é position:relative de propósito: assim a arte (absolute) ancora
+   no .brand-story e consegue transbordar acima do topo do container. */
+
+.bs-banner {
+  position: absolute;
+  top: -100px; /* transborda acima do topo do container */
+  right: 46px;
+  width: 40%;
+  max-width: 470px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.55);
+}
+
+/* =====================================================================
+   SMART THINK — selos (só os pilares que a marca atende aparecem)
+   ===================================================================== */
+.st-sub {
+  color: #9aa2ab;
+  font-size: 14px;
+  max-width: 720px;
+  margin: 4px 0 22px;
+}
+.st-sub b {
+  color: var(--laranja-2);
+}
+.smartthink {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+.pillar {
+  background: linear-gradient(180deg, #22303a, #1c2229);
+  border: 1px solid rgba(240, 122, 31, 0.4);
+  border-radius: 14px;
+  padding: 22px 18px;
+}
+/* container do selo — placeholder até receber a arte definitiva */
+.p-selo {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.p-selo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pillar h4 {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 14px;
+  color: #fff;
+  margin: 12px 0 6px;
+}
+.pillar p {
+  margin: 0;
+  font-size: 12px;
+  color: #9aa2ab;
+  line-height: 1.45;
+}
+
+/* ---------- responsivo ---------- */
+@media (max-width: 960px) {
+  .bh-in {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bh-txt h1 {
+    font-size: 28px;
+  }
+  .bh-cta {
+    justify-content: center;
+  }
+  .bh-pic {
+    width: 100%;
+  }
+  .brand-story {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    padding: 30px 26px;
+    padding: 40px 45px 30px 0px;
+  }
+
+  .bs-banner {
+    position: static;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: 18px;
+  }
+  .bs-row .bs-k {
+    width: 100px;
+  }
+  .smartthink {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

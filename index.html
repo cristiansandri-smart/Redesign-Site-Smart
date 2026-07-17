@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Smart — Nova Home (protótipo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="badge">Protótipo navegável · <b>Nova Home Site Smart</b></div>
+
+    <div class="topbar">
+      COMPRE SEU FORRO INSTALADO E PAGUE EM 60X · FRETE PARA TODO O BRASIL
+    </div>
+    <header>
+      <div class="hd">
+        <div class="logo">
+          <img src="img/logo.webp" alt="Espaço Smart" />
+        </div>
+        <div class="search">🔍 O que está buscando...</div>
+        <div class="live">📡 LOJA AO VIVO</div>
+        <div class="casas-lnk">🏠 LOJA DE CASAS</div>
+        <div class="hicons">
+          <span>📰</span><span>👤</span><span>📍</span><span>🛒</span>
+        </div>
+      </div>
+      <nav class="main">
+        <a class="hot" href="#casas">LOJA DE CASAS</a><a>STEEL FRAMING</a
+        ><a href="hub-shingle/index.html">TELHADO SHINGLE</a><a>DRYWALL</a> <a>FORRO MODULAR</a
+        ><a>PISO VINÍLICO</a><a>REVESTIMENTOS</a><a>ESQUADRIAS DE PVC</a>
+      </nav>
+    </header>
+
+    <!-- ===================== BLOCO 1 · COMERCIAL ===================== -->
+
+    <!-- HERO carrossel -->
+    <section class="hero">
+      <div class="slides" id="heroSlides"></div>
+      <div class="nav l" onclick="heroGo(-1)">‹</div>
+      <div class="nav r" onclick="heroGo(1)">›</div>
+      <div class="dots" id="heroDots"></div>
+    </section>
+
+    <!-- coverflow categorias -->
+    <div class="cover" id="cover">
+      <div class="track" id="coverTrack"></div>
+    </div>
+
+    <div class="wrap">
+      <!-- ofertas em destaque -->
+      <section class="pad">
+        <div class="sec-head">
+          <div>
+            <div class="eye">Ofertas da semana</div>
+            <h2 class="blk">Aproveite enquanto durar</h2>
+          </div>
+        </div>
+        <div class="row4" id="ofertas"></div>
+      </section>
+
+      <!-- compre por solução -->
+      <section class="pad">
+        <div class="eye">Compre por solução</div>
+        <h2 class="blk">Escolha de acordo com a categoria desejada</h2>
+        <div class="tabs" id="solTabs"></div>
+        <div class="row5" id="solGrid"></div>
+      </section>
+
+      <!-- compre por etapa da obra -->
+      <section class="pad">
+        <div class="eye">Compra guiada</div>
+        <h2 class="blk">Compre por etapa da obra</h2>
+        <div class="etapas" id="etapas"></div>
+      </section>
+
+      <!-- mais vendidos -->
+      <section class="pad">
+        <div class="eye">em alta</div>
+        <h2 class="blk">Produtos mais vendidos</h2>
+        <div class="row5" id="maisvendidos"></div>
+      </section>
+
+      <!-- kits -->
+      <section class="pad">
+        <div class="eye">Facilite a compra</div>
+        <h2 class="blk">Kits e combos</h2>
+        <div class="row3" id="kits"></div>
+      </section>
+
+      <!-- condições -->
+      <section class="pad">
+        <div class="cond">
+          <div class="c">
+            <span class="em">💳</span>
+            <div>
+              <h5>Financie em até 240x</h5>
+              <p>Sua casa em LSF cabe no bolso</p>
+            </div>
+          </div>
+          <div class="c">
+            <span class="em">🏢</span>
+            <div>
+              <h5>Condição especial CNPJ</h5>
+              <p>Preço e prazo para profissionais</p>
+            </div>
+          </div>
+          <div class="c">
+            <span class="em">🚚</span>
+            <div>
+              <h5>Frete para todo o Brasil</h5>
+              <p>Direto da fábrica · 48 lojas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="marq"><div class="tk" id="mqA"></div></div>
+
+    <!-- ===================== BLOCO 2 · INSTITUCIONAL ===================== -->
+    <div class="inst">
+      <div class="wrap">
+        <!-- dois cards grandes (substituem os banners colados) -->
+        <section class="pad">
+          <div class="bridge">
+            <div
+              class="bigcard"
+              onclick="
+                scrollTo(0, document.getElementById('casas').offsetTop - 70)
+              "
+            >
+              <img data-img="casa_steel" alt="Casa em Light Steel Frame" />
+              <div class="bc">
+                <div class="ky">Loja de Casas</div>
+                <h3>Sua casa dos sonhos<br />em Light Steel Frame</h3>
+                <p>
+                  Projetos arquitetônicos completos, prontos para construir.
+                </p>
+                <span class="go">Conhecer a Loja de Casas</span>
+              </div>
+            </div>
+            <div class="bigcard">
+              <img data-img="etapa_obra" alt="Steel framing" />
+              <div class="bc">
+                <div class="ky">Tudo para sua obra</div>
+                <h3>Materiais por<br />etapa da obra</h3>
+                <p>
+                  Da fundação ao acabamento, com quem entende de construção a
+                  seco.
+                </p>
+                <span class="go">Ver materiais</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- LOJA DE CASAS destaque -->
+        <section class="pad" id="casas">
+          <div class="casas">
+            <div class="bg"><img data-img="loja_casas" alt="Casa LSF" /></div>
+            <div class="ct">
+              <span class="pion">★ 1ª Loja de Casas do Brasil em LSF</span>
+              <h2>Escolha, personalize e construa sua casa</h2>
+              <p class="lead">
+                Mais de 40 projetos arquitetônicos completos em Light Steel
+                Frame — o método mais rápido, limpo e sustentável, com todos os
+                materiais em um só lugar.
+              </p>
+              <div class="steps">
+                <div class="st">
+                  <div class="num">01</div>
+                  <h5>Escolha o projeto</h5>
+                  <p>40+ plantas por estilo e metragem</p>
+                </div>
+                <div class="st">
+                  <div class="num">02</div>
+                  <h5>Personalize</h5>
+                  <p>Adapte acabamentos e ambientes</p>
+                </div>
+                <div class="st">
+                  <div class="num">03</div>
+                  <h5>A gente constrói</h5>
+                  <p>Materiais e execução em LSF</p>
+                </div>
+              </div>
+              <span class="cta">Ver catálogo de projetos</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- filtro por estilo + vitrine -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">
+            Encontre sua casa pelo estilo
+          </div>
+          <h2 class="blk">Catálogo de projetos</h2>
+          <div class="stylefilter" id="stylefilter"></div>
+          <div class="vitrine" id="vitrine"></div>
+        </section>
+
+        <!-- cases -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">Prova real</div>
+          <h2 class="blk">Cases de sucesso</h2>
+          <div class="cases-g" id="casesG"></div>
+        </section>
+
+        <!-- sustentômetro -->
+        <section class="pad">
+          <div class="sust">
+            <h2>SUSTENTÔMETRO</h2>
+            <p class="s2">
+              O impacto ambiental de construir em Light Steel Frame · desde 2015
+            </p>
+            <div class="g" id="sustG"></div>
+          </div>
+        </section>
+
+        <!-- vídeos -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">Conteúdo</div>
+          <h2 class="blk">Tire dúvidas e compre pelos nossos vídeos</h2>
+          <div class="reels" id="reels"></div>
+        </section>
+
+        <!-- treinamentos -->
+        <section class="pad">
+          <div class="train">
+            <div class="t1">TREINAMENTO<br />LIGHT STEEL FRAMING</div>
+            <div class="t2">
+              Certificação com o SENAI<br />Agenda 2026 · 12 cidades
+            </div>
+          </div>
+        </section>
+
+        <!-- ecossistema -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">
+            Nosso ecossistema
+          </div>
+          <h2 class="blk">Mais da Espaço Smart</h2>
+          <div class="eco" id="eco"></div>
+        </section>
+
+        <!-- marcas -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">Parceiros</div>
+          <h2 class="blk">As melhores marcas de cada segmento</h2>
+          <div class="brands" id="brands"></div>
+        </section>
+
+        <!-- lojas -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">Onde estamos</div>
+          <h2 class="blk">+48 lojas pelo Brasil</h2>
+          <div class="lojas-g" id="lojas"></div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <div class="ftg">
+          <div>
+            <h5>Newsletter</h5>
+            <p style="color: #9aa2ab">Novidades e promoções em primeira mão.</p>
+            <div class="np">
+              <input placeholder="Insira seu e-mail" /><button>ENVIAR</button>
+            </div>
+          </div>
+          <div>
+            <h5>Institucional</h5>
+            <ul>
+              <li>Quem somos</li>
+              <li>Loja de Casas</li>
+              <li>Sustentabilidade</li>
+              <li>Nossas Lojas</li>
+              <li>Seja Smart</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dúvidas</h5>
+            <ul>
+              <li>Blog</li>
+              <li>Condição CNPJ</li>
+              <li>Trocas e devoluções</li>
+              <li>Prazos e entregas</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Atendimento</h5>
+            <ul>
+              <li>WhatsApp</li>
+              <li>Loja ao Vivo</li>
+              <li>SAC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftbar">
+          Espaço Smart · Ponta Grossa - PR · Protótipo de estudo — não é o site
+          em produção · FastStore / VTEX
+        </div>
+      </div>
+    </footer>
+
+    <!-- lightbox -->
+    <div class="lb" id="lb" onclick="if (event.target.id === 'lb') closeLb();">
+      <div class="box" style="position: relative">
+        <span class="x" onclick="closeLb()">×</span>
+        <img id="lbImg" />
+        <div class="lc">
+          <h3 id="lbTitle"></h3>
+          <p id="lbText"></p>
+          <span class="cta">Assistir ao case completo</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

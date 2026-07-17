@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaço Smart — Hub Telhado Shingle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reaproveita todo o design system da home -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- estilos específicos deste hub (telhado interativo etc.) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hub Telhado Shingle — reaproveita ../style.css e ../img -->
+    <div class="badge">Protótipo navegável · <b>Hub Telhado Shingle</b></div>
+
+    <div class="topbar">
+      COMPRE SEU TELHADO INSTALADO E PAGUE EM 60X · FRETE PARA TODO O BRASIL
+    </div>
+
+    <!-- ===================== HEADER (reaproveitado da home) ===================== -->
+    <header>
+      <div class="hd">
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.webp" alt="Espaço Smart" />
+        </a>
+        <div class="search">🔍 O que está buscando...</div>
+        <div class="live">📡 LOJA AO VIVO</div>
+        <a class="casas-lnk" href="../index.html#casas">🏠 LOJA DE CASAS</a>
+        <div class="hicons">
+          <span>📰</span><span>👤</span><span>📍</span><span>🛒</span>
+        </div>
+      </div>
+      <nav class="main">
+        <a href="../index.html#casas">LOJA DE CASAS</a>
+        <a href="../index.html">STEEL FRAMING</a>
+        <a class="hot" href="index.html">TELHADO SHINGLE</a>
+        <a href="../index.html">DRYWALL</a>
+        <a href="../index.html">FORRO MODULAR</a>
+        <a href="../index.html">PISO VINÍLICO</a>
+        <a href="../index.html">REVESTIMENTOS</a>
+        <a href="../index.html">ESQUADRIAS DE PVC</a>
+      </nav>
+    </header>
+
+    <!-- rótulo de bloco -->
+    <div class="blocklabel">
+      <span class="n">HUB</span>
+      <span class="t">COBERTURA SHINGLE</span>
+      <span class="d">Tudo para o seu telhado, do OSB à cumeeira</span>
+    </div>
+
+    <!-- ===================== HERO do hub ===================== -->
+    <section class="hub-hero">
+      <div class="hh-in">
+        <div class="hh-txt">
+          <div class="eye" style="color: var(--laranja-2)">Cobertura Shingle</div>
+          <h1>O telhado que muda a cara<br />da sua construção</h1>
+          <p>
+            Leve, impermeável e resistente a ventos de até 200 km/h. Monte o
+            sistema completo — telha, subcobertura, OSB e acessórios — com quem
+            entende de construção a seco.
+          </p>
+          <div class="hh-cta">
+            <a class="cta" href="#produtos">Ver produtos</a>
+            <a class="cta ghost" href="#composicao">Como funciona</a>
+          </div>
+        </div>
+        <div class="hh-pic"><img data-img="telha_dark" alt="Telha Shingle" /></div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOCO 1 · COMERCIAL ===================== -->
+    <div class="wrap">
+      <!-- ofertas -->
+      <section class="pad">
+        <div class="sec-head">
+          <div>
+            <div class="eye">Ofertas da semana</div>
+            <h2 class="blk">Ofertas em telhado Shingle</h2>
+          </div>
+        </div>
+        <div class="row4" id="ofertasShingle"></div>
+      </section>
+
+      <!-- produtos diversos: telhas + acessórios de montagem -->
+      <section class="pad">
+        <div class="eye">Monte seu telhado</div>
+        <h2 class="blk">Telhas e tudo para a instalação</h2>
+        <div class="tabs" id="shTabs"></div>
+        <div class="row5" id="shGrid"></div>
+      </section>
+
+      <!-- todos os produtos relacionados: 2 linhas + ver mais -->
+      <section class="pad" id="produtos">
+        <div class="sec-head">
+          <div>
+            <div class="eye">Catálogo</div>
+            <h2 class="blk">Todos os produtos da linha Shingle</h2>
+          </div>
+        </div>
+        <div class="row5" id="allGrid"></div>
+        <div class="allGrid-more" id="allGridMore"></div>
+        <div class="vermais-wrap">
+          <span class="vermais" id="verMais">Ver todos os produtos ›</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="marq"><div class="tk" id="mqShingle"></div></div>
+
+    <!-- ===================== BLOCO 2 · INSTITUCIONAL ===================== -->
+    <div class="inst">
+      <div class="wrap">
+        <!-- destaque institucional (baseado na seção Loja de Casas) -->
+        <section class="pad">
+          <div class="casas">
+            <div class="bg"><img data-img="telha_atacama" alt="Telhado Shingle" /></div>
+            <div class="ct">
+              <span class="pion">★ Telha Smart Shingle · fabricação própria</span>
+              <h2>Por que trocar o telhado convencional pelo Shingle?</h2>
+              <p class="lead">
+                Uma cobertura shingle pesa cerca de 10× menos que a cerâmica,
+                dispensa estrutura reforçada, não racha, não desbota e se adapta
+                a qualquer inclinação — inclusive curvas e mansardas.
+              </p>
+              <div class="steps">
+                <div class="st">
+                  <div class="num">LEVE</div>
+                  <h5>~12 kg/m²</h5>
+                  <p>Contra ~45 kg/m² da telha cerâmica</p>
+                </div>
+                <div class="st">
+                  <div class="num">RÁPIDO</div>
+                  <h5>Instalação a seco</h5>
+                  <p>Menos mão de obra e desperdício na obra</p>
+                </div>
+                <div class="st">
+                  <div class="num">DURÁVEL</div>
+                  <h5>Até 30 anos</h5>
+                  <p>Garantia de fábrica e alta resistência a vento</p>
+                </div>
+              </div>
+              <a class="cta" href="#composicao">Entender a composição</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- comparativo shingle vs convencional -->
+        <section class="pad">
+          <div class="eye" style="color: var(--laranja-2)">Comparativo</div>
+          <h2 class="blk">Shingle vs. telhado convencional</h2>
+          <div class="vs" id="vsTable"></div>
+        </section>
+
+        <!-- COMPOSIÇÃO DO TELHADO — interativo -->
+        <section class="pad" id="composicao">
+          <div class="eye" style="color: var(--laranja-2)">Anatomia do sistema</div>
+          <h2 class="blk">Composição do telhado</h2>
+          <p class="comp-sub">
+            Passe o mouse sobre cada camada para ver o que ela faz.
+          </p>
+          <div class="roof">
+            <!-- pilha visual de camadas -->
+            <div class="roof-stack" id="roofStack"></div>
+            <!-- painel de detalhe -->
+            <div class="roof-info" id="roofInfo">
+              <div class="ri-num" id="riNum">1</div>
+              <h3 id="riTitle">Cumeeira ventilada</h3>
+              <p id="riText"></p>
+              <div class="ri-spec" id="riSpec"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="pad">
+          <div class="train">
+            <div class="t1">MONTE SEU<br />ORÇAMENTO SHINGLE</div>
+            <div class="t2">
+              Fale com um especialista<br />e receba o kit completo para sua metragem
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===================== FOOTER (reaproveitado) ===================== -->
+    <footer>
+      <div class="wrap">
+        <div class="ftg">
+          <div>
+            <h5>Newsletter</h5>
+            <p style="color: #9aa2ab">Novidades e promoções em primeira mão.</p>
+            <div class="np">
+              <input placeholder="Insira seu e-mail" /><button>ENVIAR</button>
+            </div>
+          </div>
+          <div>
+            <h5>Institucional</h5>
+            <ul>
+              <li><a href="../index.html">Quem somos</a></li>
+              <li><a href="../index.html#casas">Loja de Casas</a></li>
+              <li>Sustentabilidade</li>
+              <li>Nossas Lojas</li>
+              <li>Seja Smart</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Dúvidas</h5>
+            <ul>
+              <li>Blog</li>
+              <li>Condição CNPJ</li>
+              <li>Trocas e devoluções</li>
+              <li>Prazos e entregas</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Atendimento</h5>
+            <ul>
+              <li>WhatsApp</li>
+              <li>Loja ao Vivo</li>
+              <li>SAC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ftbar">
+          Espaço Smart · Ponta Grossa - PR · Protótipo de estudo — não é o site
+          em produção · FastStore / VTEX
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
