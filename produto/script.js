@@ -176,22 +176,22 @@ document.getElementById("ficha").innerHTML =
 /* ---------- Smart Think (selos do produto) ---------- */
 const SELOS = [
   {
-    img: "../img/Selo_qual.png",
+    img: "../img/selo_qual.png",
     t: "Qualidade de vida",
     d: "Conforto acústico (4 dB) e baixa emissão de COVs.",
   },
   {
-    img: "../img/Selo_sus.png",
+    img: "../img/selo_sus.png",
     t: "Sustentabilidade",
     d: "Certificação Floor Score e AGBB/DIBt.",
   },
   {
-    img: "../img/Selo_tec.png",
+    img: "../img/selo_tec.png",
     t: "Tecnologia",
     d: "Proteção PUR + UV e camada de uso reforçada.",
   },
   {
-    img: "../img/Selo_custo.png",
+    img: "../img/selo_custo.png",
     t: "Custo-benefício",
     d: "15 anos de garantia e instalação rápida.",
   },

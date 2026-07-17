@@ -157,26 +157,26 @@ document.getElementById("mqBrand").innerHTML =
    selo = container de imagem (placeholder D1..D5 → trocar pela arte do selo). */
 const PILLARS = [
   {
-    selo: "../img/Selo_ind.png",
+    selo: "../img/selo_ind.png",
     t: "Industrialização",
     on: true,
     d: "Produtividade e padronização na construção a seco — mais obra pronta em menos tempo.",
   },
   {
-    selo: "../img/Selo_qual.png",
+    selo: "../img/selo_qual.png",
     t: "Qualidade de vida",
     on: true,
     d: "Ergonomia, controle de vibração e segurança para o profissional na obra.",
   },
   {
-    selo: "../img/Selo_custo.png",
+    selo: "../img/selo_custo.png",
     t: "Custo-benefício",
     on: true,
     d: "Durabilidade e assistência que reduzem o custo por hora de uso da ferramenta.",
   },
-  { selo: "../img/Selo_sus.png", t: "Sustentabilidade", on: false, d: "" },
+  { selo: "../img/selo_sus.png", t: "Sustentabilidade", on: false, d: "" },
   {
-    selo: "../img/Selo_tec.png",
+    selo: "../img/selo_tec.png",
     t: "Tecnologia",
     on: true,
     d: "Eletrônica de precisão, sensores e motores de alta eficiência.",
